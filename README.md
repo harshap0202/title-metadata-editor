@@ -24,7 +24,7 @@ This Python script sets the title metadata of MKV files to their respective file
 5. **Usage**:
    - Locate ffmpeg.exe and place that on line 12 of the code
    - Select a folder with all the mkv files
-   - PLace the folder path in the code as such :
+   - PLace the folder path in the code as such : <br>
      Folder path : "E:\Modern Family\Season 01" --(turns)--> "E:\\Modern Family\\Season 01"
      
    - Run the script with the following command:
