@@ -1,23 +1,37 @@
-<h1>Title Metadata Editor</h1>
+# Title Metadata Setter for MKV Files
 
-<h3 align="center">This simple automated code copies the filename of the file and places it on the title metadata of the file</h3>
+This Python script sets the title metadata of MKV files to their respective filenames using FFmpeg.
 
-<p align="left">
-  
-  <h3 align="left">Requirements:</h3>
-  <ul>
-    <li>Python</li>
-    <li>ffmpeg</li>
-  </ul>
+## Usage
 
-  
-  <h3 align="left">Steps:</h3>
-  <ol>
-    <li>Locate ffmpeg.exe and place that on line 11 of the code</li>
-    <li>Select a folder with all the mkv files</li>
-    <li>PLace the folder path in the code as such : <br> "E:\Series\Modern Family (2009)\Season 01" >> becomes >> "E:\\Movies and Series\\Modern Family (2009)\\Season 01"</li>
-    <li>Run the code and find new files in Edited folder</li>
-  </ol>
-  
-</p>
+1. **Prerequisites**: 
+   - Python
+   - FFmpeg installed on your system. You can download it from [here](https://ffmpeg.org/download.html).
 
+2. **Installation**:
+   - Clone this repository to your local machine:
+
+     ```bash
+     https://github.com/harshap0202/title-metadata-editor.git
+     ```
+     
+3. **Input**:
+   - Place the MKV files you want to modify in the specified folder.
+
+4. **Output**:
+   - The script will create an "edited" folder within the specified folder and overwrite the original MKV files with the modified ones.
+
+5. **Usage**:
+   - Locate ffmpeg.exe and place that on line 12 of the code
+   - Select a folder with all the mkv files
+   - PLace the folder path in the code as such :
+     Folder path : "E:\Modern Family\Season 01" --(turns)--> "E:\\Modern Family\\Season 01"
+     
+   - Run the script with the following command:
+     ```bash
+     python title_metadata.py
+     ```
+
+## Troubleshooting
+
+- If you encounter any issues or errors during script execution, ensure that FFmpeg is installed correctly and that the specified folder path is correct.
